@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .placeholder {
+      width: 400px;
+      height: 22px;
+      background: linear-gradient(90deg, white, rgba(0, 0, 0, 0.2));
+      animation: loading 3s linear infinite;
+    }
+
+    @keyframes loading {
+      0% {
+        background-position: -400px 0
+      }
+
+      100% {
+        background-position: 400px 0
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <nav>
+      <ul>
+        <li><a href="/">home</a></li>
+      </ul>
+    </nav>
+    <ul>
+      <li class="placeholder"></li>
+      <li class="placeholder"></li>
+      <li class="placeholder"></li>
+    </ul>
+    <footer>footer</footer>
+  </div>
+  <script src="/bundle.main.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 const express = require("express");
 const React = require("react");
 const ReactDOMServer = require("react-dom/server");
+const path = require("path");
 const Router = require("./public/js/components/app/ServerRouter");
 const html = require("./views");
 const { productService } = require("./lib/services");
@@ -33,6 +34,10 @@ app.get("/", async (req, res) => {
     <Router state={state} url={req.url} />
   );
   res.end(html(jsx, state));
+});
+
+app.get("/home", async (req, res) => {
+  res.sendFile(path.resolve("src/views/home.html"));
 });
 
 app.get("/products/:productId", async (req, res) => {
