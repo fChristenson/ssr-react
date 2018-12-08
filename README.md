@@ -20,4 +20,4 @@ SSR has the benefit of allowing us to provide a experience that feels faster for
 
 However using SSR with React has a few drawbacks we need to consider as well.
 
-Sometime it is simpler to be without SSR and a good alternative is to use placeholder content to improve the users experience.
+Sometimes it is simpler to be without SSR and a good alternative is to use placeholder content to improve the users experience.
