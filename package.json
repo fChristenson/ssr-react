@@ -1,0 +1,27 @@
+{
+  "name": "ssr-react",
+  "version": "1.0.0",
+  "description": "## What we will cover",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bundle.server.js",
+    "webpack": "npx webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.4",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-router-dom": "4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.6",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.4",
+    "nodemon": "1.18.6",
+    "webpack": "4.26.0",
+    "webpack-cli": "3.1.2"
+  }
+}
