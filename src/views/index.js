@@ -10,6 +10,7 @@ const html = (jsx, state = {}) => {
   </head>
   
   <body>
+    <!-- The content in this element will be replaced by identical React nodes -->
     <div id="root">${jsx}</div>
     <script>window.__STATE__ = ${JSON.stringify(state)};</script>
     <script src="/bundle.main.js"></script>

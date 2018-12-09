@@ -50,6 +50,10 @@ app.get("/products/:productId", async (req, res) => {
   res.end(html(jsx, state));
 });
 
+app.get("/test", (req, res) => {
+  res.end(html());
+});
+
 app.get("/*", (req, res) => {
   const jsx = ReactDOMServer.renderToStaticMarkup(<Router url={req.url} />);
   res.end(html(jsx));
